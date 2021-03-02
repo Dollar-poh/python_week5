@@ -21,6 +21,7 @@ def ask_players_input():
             # start the game again?
             play_again()
 
+
 def convert_player_input(letter):
     if letter == "R":
         return "Rock"
@@ -29,6 +30,7 @@ def convert_player_input(letter):
     else:
         return "Scissors"
 
+
 def start_game(player_choice, computer):
     if player_choice == computer:
         return f"It's a draw! \nComputer input was {computer} \nand your input was {player_choice}"
@@ -36,6 +38,7 @@ def start_game(player_choice, computer):
         return f"You Win!!! \nComputer input was {computer} \nand your input was {player_choice}"
     else:
         return f"Computer Wins!!! \nComputer input was {computer} \nand your input was {player_choice}"
+# try to breakdown elifs in the functions above to make sure we get msgs like "scissor cuts paper "
 
 def play_again():
     another_game = input("Shall we play again? 'Y' or 'N'\n").upper()
