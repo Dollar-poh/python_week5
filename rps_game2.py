@@ -49,5 +49,11 @@ player_choice_str = convert_player_choice_to_string(player_choice)
 
 def comp_random_value():
     comp_choice = random.randint(0,2)
-    
+    return comp_choice
+    print("Computer choice is ", comp_choice)
+comp_choice = comp_random_value()
 
+
+# 4. Convert the computer’s choice. 0 becomes Rock; 1 becomes Paper; 2 becomes Scissors
+def convert_comp_choice_to_string(comp_choice):
+    comp_choice_list = ["Rock", "Paper", "Scissors"]
