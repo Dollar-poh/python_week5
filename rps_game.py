@@ -1,6 +1,6 @@
 import random
 
-# funtions
+# functions
 
 def ask_players_input():
     # variables
